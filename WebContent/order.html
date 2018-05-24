@@ -13,7 +13,7 @@
 <script language="javascript" type="text/javascript">
     //Browser Support Code
     function ajaxFunction() {
-        var ajaxRequest;  // The variable that makes Ajax possible!
+        let ajaxRequest;  // The variable that makes Ajax possible!
 
         try {
             // Opera 8.0+, Firefox, Safari
@@ -38,7 +38,7 @@
                 document.myForm.time.value = ajaxRequest.responseText;
             }
         };
-        ajaxRequest.open("GET", "/AjaxTest/servlet/AjaxTest", true);
+        ajaxRequest.open("GET", "servlet/AjaxTest", true);
         ajaxRequest.send(null);
     }
 </script>

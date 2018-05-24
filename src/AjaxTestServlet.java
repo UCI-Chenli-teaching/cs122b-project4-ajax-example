@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Calendar;
 
-@WebServlet("/servlet/AjaxTest")
-public class AjaxTest extends HttpServlet {
+@WebServlet(name = "AjaxTestServlet", urlPatterns = "/servlet/AjaxTest")
+public class AjaxTestServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    public AjaxTest() {
+    public AjaxTestServlet() {
         super();
     }
 
